@@ -10,4 +10,5 @@ import Foundation
 
 protocol LoginViewControllerPresenterProtocol: class {
     var loginViewModel: LoginViewControllerModel { get }
+    func login()
 }

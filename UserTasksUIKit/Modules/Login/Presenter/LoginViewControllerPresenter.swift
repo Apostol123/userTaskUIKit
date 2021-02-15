@@ -9,8 +9,11 @@
 import Foundation
 
 class LoginViewPresenter: LoginViewControllerPresenterProtocol {
+     var dataManager: LoginDataManagerProtocol
     
-    
+    init(dataManager: LoginDataManagerProtocol) {
+        self.dataManager = dataManager
+    }
     
     var loginViewModel: LoginViewControllerModel {
         LoginViewControllerModel(
@@ -18,5 +21,12 @@ class LoginViewPresenter: LoginViewControllerPresenterProtocol {
             buttonTitle: "Login",
             usernameHint: "Login",
             passwordHint: "Login")
+    }
+    
+    func login() {
+        print("aboutToCAll")
+        dataManager.getUser(callback: { (user) in
+            print(user)
+        })
     }
 }

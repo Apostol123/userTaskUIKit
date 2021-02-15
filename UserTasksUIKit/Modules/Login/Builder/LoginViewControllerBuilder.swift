@@ -11,7 +11,8 @@ import UIKit
 class LoginViewBuilder: Builder {
     
     func build() -> UIViewController {
-        let presenter = LoginViewPresenter()
+        let dataManager = LoginDataManager()
+        let presenter = LoginViewPresenter(dataManager: dataManager)
         let view = LoginViewController(presenter: presenter)
         return view
         

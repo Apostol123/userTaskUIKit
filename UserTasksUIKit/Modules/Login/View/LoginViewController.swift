@@ -9,10 +9,12 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    var presenter: LoginViewPresenter
+    var presenter: LoginViewControllerPresenterProtocol
+    let model: LoginViewControllerModel
 
-    init(presenter: LoginViewPresenter) {
+    init(presenter: LoginViewControllerPresenterProtocol) {
         self.presenter = presenter
+        self.model = presenter.loginViewModel
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -23,7 +25,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
-        print(presenter.loginViewModel.title)
+        print(model.title)
+        presenter.login()
         // Do any additional setup after loading the view.
     }
     
