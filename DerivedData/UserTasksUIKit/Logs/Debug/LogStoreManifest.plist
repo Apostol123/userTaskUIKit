@@ -40,6 +40,40 @@
 			<key>uniqueIdentifier</key>
 			<string>097D5E93-A942-4B8E-B87A-39CE8A76814B</string>
 		</dict>
+		<key>0CA5AD5B-A90E-434A-8416-0D97D8B5E1E8</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>0CA5AD5B-A90E-434A-8416-0D97D8B5E1E8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>UserTasksUIKit project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>UserTasksUIKit</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug UserTasksUIKit</string>
+			<key>timeStartedRecording</key>
+			<real>635073757.29128897</real>
+			<key>timeStoppedRecording</key>
+			<real>635074628.79523206</real>
+			<key>title</key>
+			<string>Debug UserTasksUIKit</string>
+			<key>uniqueIdentifier</key>
+			<string>0CA5AD5B-A90E-434A-8416-0D97D8B5E1E8</string>
+		</dict>
 		<key>19A324DC-EE6F-4FF8-8567-5A9EB9BC9497</key>
 		<dict>
 			<key>className</key>
@@ -210,6 +244,142 @@
 			<key>uniqueIdentifier</key>
 			<string>54E6496F-1B93-4862-BCD9-1B0E446808BB</string>
 		</dict>
+		<key>6F82357E-7118-42C2-9AAE-735660B1D5CC</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>6F82357E-7118-42C2-9AAE-735660B1D5CC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>UserTasksUIKit project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>UserTasksUIKit</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug UserTasksUIKit</string>
+			<key>timeStartedRecording</key>
+			<real>635074760.17684901</real>
+			<key>timeStoppedRecording</key>
+			<real>635074770.92416596</real>
+			<key>title</key>
+			<string>Debug UserTasksUIKit</string>
+			<key>uniqueIdentifier</key>
+			<string>6F82357E-7118-42C2-9AAE-735660B1D5CC</string>
+		</dict>
+		<key>7703F98A-8C63-4496-A8CA-7DEBBDFDB53C</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>7703F98A-8C63-4496-A8CA-7DEBBDFDB53C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>UserTasksUIKit project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>UserTasksUIKit</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug UserTasksUIKit</string>
+			<key>timeStartedRecording</key>
+			<real>635074644.73511004</real>
+			<key>timeStoppedRecording</key>
+			<real>635074664.90725899</real>
+			<key>title</key>
+			<string>Debug UserTasksUIKit</string>
+			<key>uniqueIdentifier</key>
+			<string>7703F98A-8C63-4496-A8CA-7DEBBDFDB53C</string>
+		</dict>
+		<key>A59446B1-972F-4FF6-8C9B-31AEF517D9A4</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>A59446B1-972F-4FF6-8C9B-31AEF517D9A4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>UserTasksUIKit project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>UserTasksUIKit</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug UserTasksUIKit</string>
+			<key>timeStartedRecording</key>
+			<real>635074666.08173597</real>
+			<key>timeStoppedRecording</key>
+			<real>635074723.160622</real>
+			<key>title</key>
+			<string>Debug UserTasksUIKit</string>
+			<key>uniqueIdentifier</key>
+			<string>A59446B1-972F-4FF6-8C9B-31AEF517D9A4</string>
+		</dict>
+		<key>AACFCD08-1E4B-4A3D-A23F-5C589D52B60B</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>AACFCD08-1E4B-4A3D-A23F-5C589D52B60B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>UserTasksUIKit project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>UserTasksUIKit</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug UserTasksUIKit</string>
+			<key>timeStartedRecording</key>
+			<real>635074724.74622095</real>
+			<key>timeStoppedRecording</key>
+			<real>635074746.97877395</real>
+			<key>title</key>
+			<string>Debug UserTasksUIKit</string>
+			<key>uniqueIdentifier</key>
+			<string>AACFCD08-1E4B-4A3D-A23F-5C589D52B60B</string>
+		</dict>
 		<key>AE9169B3-A3F0-4178-B61C-CBF3BF486DDB</key>
 		<dict>
 			<key>className</key>
@@ -345,6 +515,74 @@
 			<string>Debug UserTasksUIKit</string>
 			<key>uniqueIdentifier</key>
 			<string>C5B69B65-77FA-49C5-9F9C-E05CA5BB51FF</string>
+		</dict>
+		<key>CD5CBF52-EB68-4075-BD2C-461C0E8A22C3</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>CD5CBF52-EB68-4075-BD2C-461C0E8A22C3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>UserTasksUIKit project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>UserTasksUIKit</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug UserTasksUIKit</string>
+			<key>timeStartedRecording</key>
+			<real>635074630.27545798</real>
+			<key>timeStoppedRecording</key>
+			<real>635074644.44610906</real>
+			<key>title</key>
+			<string>Debug UserTasksUIKit</string>
+			<key>uniqueIdentifier</key>
+			<string>CD5CBF52-EB68-4075-BD2C-461C0E8A22C3</string>
+		</dict>
+		<key>DD67C4D6-F9F1-4651-8770-F27F546A2792</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>DD67C4D6-F9F1-4651-8770-F27F546A2792.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>UserTasksUIKit project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>UserTasksUIKit</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug UserTasksUIKit</string>
+			<key>timeStartedRecording</key>
+			<real>635074771.16025603</real>
+			<key>timeStoppedRecording</key>
+			<real>635074802.58838296</real>
+			<key>title</key>
+			<string>Debug UserTasksUIKit</string>
+			<key>uniqueIdentifier</key>
+			<string>DD67C4D6-F9F1-4651-8770-F27F546A2792</string>
 		</dict>
 	</dict>
 </dict>
