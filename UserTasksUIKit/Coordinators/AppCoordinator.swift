@@ -52,7 +52,7 @@ public class AppCoordinator: Coordinator {
     }
     
     func goToLoginFlow() {
-        let vc = ViewController()
-        navigator.pushViewController(vc, animated: true)
+        let loginViewController = LoginViewBuilder().build()
+        navigator.pushViewController(loginViewController, animated: true)
     }
 }
