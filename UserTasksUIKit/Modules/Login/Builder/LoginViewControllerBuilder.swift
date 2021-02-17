@@ -9,11 +9,16 @@
 import UIKit
 
 class LoginViewBuilder: Builder {
+    var coordinatorOutput: (LoginViewOutput) -> Void
+    init( coordinatorOtput:@escaping(LoginViewOutput)-> Void) {
+        self.coordinatorOutput  = coordinatorOtput
+    }
     
     func build() -> UIViewController {
         let dataManager = LoginDataManager()
-        let presenter = LoginViewPresenter(dataManager: dataManager)
+        let presenter = LoginViewPresenter(dataManager: dataManager, coordinatorOutput: coordinatorOutput)
         let view = LoginViewController(presenter: presenter)
+        presenter.view = view
         return view
         
     }

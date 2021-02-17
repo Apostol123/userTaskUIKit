@@ -9,24 +9,34 @@
 import Foundation
 
 class LoginViewPresenter: LoginViewControllerPresenterProtocol {
-     var dataManager: LoginDataManagerProtocol
+  
+    weak var view: LoginViewProtocol?
+    var dataManager: LoginDataManagerProtocol
+    var coordinatorOutPut: (LoginViewOutput) -> Void
     
-    init(dataManager: LoginDataManagerProtocol) {
+    init(dataManager: LoginDataManagerProtocol,coordinatorOutput:@escaping(LoginViewOutput)->Void) {
         self.dataManager = dataManager
+        self.coordinatorOutPut = coordinatorOutput
     }
     
     var loginViewModel: LoginViewControllerModel {
         LoginViewControllerModel(
-            title: "Login",
+            title: "User Taks",
             buttonTitle: "Login",
-            usernameHint: "Login",
-            passwordHint: "Login")
+            usernameHint: "Username",
+            passwordHint: "Password")
     }
     
-    func login() {
+    func login(username: String, password: String)  {
         print("aboutToCAll")
+        
         dataManager.getUser(callback: { (user) in
-            print(user)
+            if   let user = user.first(where: {$0.name == username && $0.username == password}) {
+                self.coordinatorOutPut(.task)
+            } else {
+                self.view?.showAlert()
+            }
         })
+       
     }
 }

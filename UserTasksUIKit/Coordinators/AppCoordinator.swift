@@ -35,7 +35,9 @@ public class AppCoordinator: Coordinator {
         switch currentState {
         case .willShowLoginFlow:
             goToLoginFlow()
-        case .didShowLoginFlow,.inital, .willShowTasksFlow:
+        case .willShowTasksFlow:
+            goToTaskFlow()
+        case .didShowLoginFlow,.inital:
             fatalError("Unexpected cases in App Coordinator")
         }
     }
@@ -52,7 +54,21 @@ public class AppCoordinator: Coordinator {
     }
     
     func goToLoginFlow() {
-        let loginViewController = LoginViewBuilder().build()
+        let loginViewController = LoginViewBuilder(coordinatorOtput: { [weak self] output in
+            switch output {
+            case .task:
+                self?.currentState = .willShowTasksFlow
+                self?.loop()
+            
+            }
+            
+        }).build()
         navigator.pushViewController(loginViewController, animated: true)
+    }
+    
+    func goToTaskFlow() {
+        let view = UIViewController()
+        view.view.backgroundColor = .red
+        navigator.pushViewController(view, animated: true)
     }
 }

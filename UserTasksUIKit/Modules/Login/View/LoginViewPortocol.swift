@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol LoginViewProtocol {
-     func getUsers()
+protocol LoginViewProtocol: class {
+     func showAlert()
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0767522925DBE21C00B0CFED /* LoginViewOutPut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767522825DBE21C00B0CFED /* LoginViewOutPut.swift */; };
 		07F202DF25DA693F000E1AA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F202DE25DA693F000E1AA1 /* AppDelegate.swift */; };
 		07F202E125DA693F000E1AA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F202E025DA693F000E1AA1 /* SceneDelegate.swift */; };
 		07F202E325DA693F000E1AA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F202E225DA693F000E1AA1 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0767522825DBE21C00B0CFED /* LoginViewOutPut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewOutPut.swift; sourceTree = "<group>"; };
 		07F202DB25DA693F000E1AA1 /* UserTasksUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserTasksUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F202DE25DA693F000E1AA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07F202E025DA693F000E1AA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				07F2030525DA7A4A000E1AA1 /* LoginViewController.swift */,
 				07F2030D25DA7AC6000E1AA1 /* LoginViewControllerModel.swift */,
 				07F2032C25DA9BFE000E1AA1 /* LoginViewPortocol.swift */,
+				0767522825DBE21C00B0CFED /* LoginViewOutPut.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				07F2030E25DA7AC6000E1AA1 /* LoginViewControllerModel.swift in Sources */,
 				07F2030A25DA7A71000E1AA1 /* LoginViewControllerBuilder.swift in Sources */,
 				07F2032125DA8D39000E1AA1 /* UserApi.swift in Sources */,
+				0767522925DBE21C00B0CFED /* LoginViewOutPut.swift in Sources */,
 				07F202FE25DA75F5000E1AA1 /* AppCoordinator.swift in Sources */,
 				07F2031F25DA8A83000E1AA1 /* RequestBuilder.swift in Sources */,
 				07F2032625DA8F25000E1AA1 /* LoginDataManagerProtocol.swift in Sources */,
