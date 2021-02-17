@@ -9,5 +9,5 @@
 import Foundation
 
 enum LoginViewOutput {
-    case task
+    case task(userId: Int)
 }

@@ -14,7 +14,7 @@ public class AppCoordinator: Coordinator {
         case inital
         case willShowLoginFlow
         case didShowLoginFlow
-        case willShowTasksFlow
+        case willShowTasksFlow(userId:Int?)
     }
     
     let navigator: UINavigationController
@@ -35,8 +35,8 @@ public class AppCoordinator: Coordinator {
         switch currentState {
         case .willShowLoginFlow:
             goToLoginFlow()
-        case .willShowTasksFlow:
-            goToTaskFlow()
+        case .willShowTasksFlow(let userId):
+            goToTaskFlow(userId: userId)
         case .didShowLoginFlow,.inital:
             fatalError("Unexpected cases in App Coordinator")
         }
@@ -47,7 +47,7 @@ public class AppCoordinator: Coordinator {
         case .inital:
             return .willShowLoginFlow
         case .didShowLoginFlow:
-            return .willShowTasksFlow
+            return .willShowTasksFlow(userId: nil)
         case .willShowLoginFlow, .willShowTasksFlow:
         return state
         }
@@ -56,8 +56,8 @@ public class AppCoordinator: Coordinator {
     func goToLoginFlow() {
         let loginViewController = LoginViewBuilder(coordinatorOtput: { [weak self] output in
             switch output {
-            case .task:
-                self?.currentState = .willShowTasksFlow
+            case .task(let userId):
+                self?.currentState = .willShowTasksFlow(userId: userId)
                 self?.loop()
             
             }
@@ -66,9 +66,9 @@ public class AppCoordinator: Coordinator {
         navigator.pushViewController(loginViewController, animated: true)
     }
     
-    func goToTaskFlow() {
-        let view = UIViewController()
-        view.view.backgroundColor = .red
+    func goToTaskFlow(userId: Int?) {
+        guard let userId = userId else { return}
+        let view = TaskViewBuilder(userId: userId).build()
         navigator.pushViewController(view, animated: true)
     }
 }

@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		0767522925DBE21C00B0CFED /* LoginViewOutPut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767522825DBE21C00B0CFED /* LoginViewOutPut.swift */; };
+		0767523125DD1DC500B0CFED /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767523025DD1DC500B0CFED /* TaskViewController.swift */; };
+		0767523325DD1E1100B0CFED /* TaskViewDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767523225DD1E1100B0CFED /* TaskViewDataManager.swift */; };
+		0767523525DD1E2B00B0CFED /* TaskViewDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767523425DD1E2B00B0CFED /* TaskViewDataManagerProtocol.swift */; };
+		0767523A25DD1EB500B0CFED /* TaskAPi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767523925DD1EB500B0CFED /* TaskAPi.swift */; };
+		0767523C25DD204500B0CFED /* TaskViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767523B25DD204500B0CFED /* TaskViewPresenter.swift */; };
+		0767523E25DD205000B0CFED /* TaskViewPresenterProtcol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767523D25DD205000B0CFED /* TaskViewPresenterProtcol.swift */; };
+		0767524025DD20C900B0CFED /* TaskViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767523F25DD20C900B0CFED /* TaskViewBuilder.swift */; };
+		0767524225DD224500B0CFED /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767524125DD224500B0CFED /* Todo.swift */; };
+		0767524525DD2EC400B0CFED /* TaskViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767524425DD2EC400B0CFED /* TaskViewInteractor.swift */; };
+		0767524725DD2EE300B0CFED /* TaskViewInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767524625DD2EE300B0CFED /* TaskViewInteractorProtocol.swift */; };
+		0767524925DD356100B0CFED /* TaskViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767524825DD356100B0CFED /* TaskViewControllerProtocol.swift */; };
 		07F202DF25DA693F000E1AA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F202DE25DA693F000E1AA1 /* AppDelegate.swift */; };
 		07F202E125DA693F000E1AA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F202E025DA693F000E1AA1 /* SceneDelegate.swift */; };
 		07F202E325DA693F000E1AA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F202E225DA693F000E1AA1 /* ViewController.swift */; };
@@ -33,6 +44,17 @@
 
 /* Begin PBXFileReference section */
 		0767522825DBE21C00B0CFED /* LoginViewOutPut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewOutPut.swift; sourceTree = "<group>"; };
+		0767523025DD1DC500B0CFED /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		0767523225DD1E1100B0CFED /* TaskViewDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewDataManager.swift; sourceTree = "<group>"; };
+		0767523425DD1E2B00B0CFED /* TaskViewDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewDataManagerProtocol.swift; sourceTree = "<group>"; };
+		0767523925DD1EB500B0CFED /* TaskAPi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAPi.swift; sourceTree = "<group>"; };
+		0767523B25DD204500B0CFED /* TaskViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewPresenter.swift; sourceTree = "<group>"; };
+		0767523D25DD205000B0CFED /* TaskViewPresenterProtcol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewPresenterProtcol.swift; sourceTree = "<group>"; };
+		0767523F25DD20C900B0CFED /* TaskViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewBuilder.swift; sourceTree = "<group>"; };
+		0767524125DD224500B0CFED /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		0767524425DD2EC400B0CFED /* TaskViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewInteractor.swift; sourceTree = "<group>"; };
+		0767524625DD2EE300B0CFED /* TaskViewInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewInteractorProtocol.swift; sourceTree = "<group>"; };
+		0767524825DD356100B0CFED /* TaskViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewControllerProtocol.swift; sourceTree = "<group>"; };
 		07F202DB25DA693F000E1AA1 /* UserTasksUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserTasksUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F202DE25DA693F000E1AA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07F202E025DA693F000E1AA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +91,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0767522A25DD1D3500B0CFED /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				0767524325DD2EB600B0CFED /* Interactor */,
+				0767522F25DD1D7000B0CFED /* Builder */,
+				0767522E25DD1D5F00B0CFED /* Presenter */,
+				0767522D25DD1D5800B0CFED /* DataManager */,
+				0767522B25DD1D4600B0CFED /* View */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		0767522B25DD1D4600B0CFED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0767523025DD1DC500B0CFED /* TaskViewController.swift */,
+				0767524825DD356100B0CFED /* TaskViewControllerProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0767522D25DD1D5800B0CFED /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				0767523225DD1E1100B0CFED /* TaskViewDataManager.swift */,
+				0767523425DD1E2B00B0CFED /* TaskViewDataManagerProtocol.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		0767522E25DD1D5F00B0CFED /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0767523B25DD204500B0CFED /* TaskViewPresenter.swift */,
+				0767523D25DD205000B0CFED /* TaskViewPresenterProtcol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0767522F25DD1D7000B0CFED /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0767523F25DD20C900B0CFED /* TaskViewBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		0767523825DD1EA500B0CFED /* TaskApi */ = {
+			isa = PBXGroup;
+			children = (
+				0767523925DD1EB500B0CFED /* TaskAPi.swift */,
+			);
+			path = TaskApi;
+			sourceTree = "<group>";
+		};
+		0767524325DD2EB600B0CFED /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0767524425DD2EC400B0CFED /* TaskViewInteractor.swift */,
+				0767524625DD2EE300B0CFED /* TaskViewInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		07F202D225DA693F000E1AA1 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				07F2030F25DA859B000E1AA1 /* User.swift */,
+				0767524125DD224500B0CFED /* Todo.swift */,
 			);
 			path = Entitis;
 			sourceTree = "<group>";
@@ -147,6 +234,7 @@
 		07F202F925DA7205000E1AA1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0767522A25DD1D3500B0CFED /* Task */,
 				07F2030125DA79EE000E1AA1 /* Login */,
 			);
 			path = Modules;
@@ -194,6 +282,7 @@
 		07F2031125DA85C1000E1AA1 /* ApiService */ = {
 			isa = PBXGroup;
 			children = (
+				0767523825DD1EA500B0CFED /* TaskApi */,
 				07F2032225DA8DBE000E1AA1 /* UserApi */,
 				07F2031C25DA8A55000E1AA1 /* URLSession+get.swift */,
 				07F2031E25DA8A83000E1AA1 /* RequestBuilder.swift */,
@@ -289,16 +378,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0767524225DD224500B0CFED /* Todo.swift in Sources */,
 				07F2030625DA7A4A000E1AA1 /* LoginViewController.swift in Sources */,
+				0767524025DD20C900B0CFED /* TaskViewBuilder.swift in Sources */,
+				0767524725DD2EE300B0CFED /* TaskViewInteractorProtocol.swift in Sources */,
 				07F2032925DA8FAE000E1AA1 /* LoginDataManager.swift in Sources */,
+				0767523525DD1E2B00B0CFED /* TaskViewDataManagerProtocol.swift in Sources */,
 				07F202FB25DA75A5000E1AA1 /* Coordinator.swift in Sources */,
+				0767524525DD2EC400B0CFED /* TaskViewInteractor.swift in Sources */,
+				0767523E25DD205000B0CFED /* TaskViewPresenterProtcol.swift in Sources */,
 				07F2030825DA7A66000E1AA1 /* LoginViewControllerPresenter.swift in Sources */,
 				07F2032D25DA9BFE000E1AA1 /* LoginViewPortocol.swift in Sources */,
 				07F202E325DA693F000E1AA1 /* ViewController.swift in Sources */,
+				0767524925DD356100B0CFED /* TaskViewControllerProtocol.swift in Sources */,
 				07F2030E25DA7AC6000E1AA1 /* LoginViewControllerModel.swift in Sources */,
 				07F2030A25DA7A71000E1AA1 /* LoginViewControllerBuilder.swift in Sources */,
+				0767523A25DD1EB500B0CFED /* TaskAPi.swift in Sources */,
+				0767523125DD1DC500B0CFED /* TaskViewController.swift in Sources */,
 				07F2032125DA8D39000E1AA1 /* UserApi.swift in Sources */,
 				0767522925DBE21C00B0CFED /* LoginViewOutPut.swift in Sources */,
+				0767523325DD1E1100B0CFED /* TaskViewDataManager.swift in Sources */,
 				07F202FE25DA75F5000E1AA1 /* AppCoordinator.swift in Sources */,
 				07F2031F25DA8A83000E1AA1 /* RequestBuilder.swift in Sources */,
 				07F2032625DA8F25000E1AA1 /* LoginDataManagerProtocol.swift in Sources */,
@@ -306,6 +405,7 @@
 				07F2032B25DA980D000E1AA1 /* ApiErros.swift in Sources */,
 				07F2031025DA859B000E1AA1 /* User.swift in Sources */,
 				07F2030C25DA7AA9000E1AA1 /* LoginViewControllerPresenterProtocol.swift in Sources */,
+				0767523C25DD204500B0CFED /* TaskViewPresenter.swift in Sources */,
 				07F2031D25DA8A55000E1AA1 /* URLSession+get.swift in Sources */,
 				07F202E125DA693F000E1AA1 /* SceneDelegate.swift in Sources */,
 				07F2030025DA79C4000E1AA1 /* Builder.swift in Sources */,

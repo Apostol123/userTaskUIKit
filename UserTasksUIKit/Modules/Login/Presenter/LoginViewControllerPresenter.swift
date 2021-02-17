@@ -32,7 +32,7 @@ class LoginViewPresenter: LoginViewControllerPresenterProtocol {
         
         dataManager.getUser(callback: { (user) in
             if   let user = user.first(where: {$0.name == username && $0.username == password}) {
-                self.coordinatorOutPut(.task)
+                self.coordinatorOutPut(.task(userId: user.id))
             } else {
                 self.view?.showAlert()
             }

@@ -12,6 +12,9 @@ extension URLSession {
     
     func get<T:Codable>(_ builder: RequestBuilder, type: T.Type, callback: @escaping(Result<T?,ApiError>) -> Void) {
         
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        
         let dataTask = self.dataTask(with: builder.urlRequest) { data, response, error in
             if let error = error {
                 print("Error in api service: \(error.localizedDescription)")
@@ -30,16 +33,21 @@ extension URLSession {
             }
             switch response.statusCode {
             case 200:
-                guard let newData = data,
-                    let result = try? JSONDecoder().decode(type, from: newData) else {
+                do {
+                    guard let newData = data else {
                         print("Decoding Error")
                         DispatchQueue.main.sync {
                             callback(.failure(ApiError.decodingError))
                         }
                         return
-                }
-                DispatchQueue.main.sync {
-                    callback(.success(result))
+                    }
+                    let result =  try decoder.decode(type, from: newData)
+                    DispatchQueue.main.sync {
+                        callback(.success(result))
+                    }
+                    
+                } catch {
+                    print(error)
                 }
             case 400:
                 print("Resource not found \(builder.urlRequest.description)")
