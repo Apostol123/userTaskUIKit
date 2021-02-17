@@ -10,7 +10,6 @@ import Foundation
 
 class TaskViewInteractor: TaskViewInteractorProtocol {
     var dataManager: TaskViewDataManagerProtocol
-    weak var presenter: TaskViewPresenterProtocol?
     var userId: Int
     
     
