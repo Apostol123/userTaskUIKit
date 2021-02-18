@@ -9,5 +9,5 @@
 import Foundation
 
 protocol TaskViewControllerProtocol: class {
-    func showTodos(todo: [Todo])
+    func show(_ content: TaskViewPresenterModel)
 }

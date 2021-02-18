@@ -8,6 +8,8 @@
 
 import Foundation
 
+
+
 protocol TaskViewDataManagerProtocol: class {
     func getTask(userId: Int, callback: @escaping([Todo]) -> Void) 
 }

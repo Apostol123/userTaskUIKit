@@ -8,6 +8,10 @@
 
 import Foundation
 
+public struct TaskViewPresenterModel {
+    let section: [TaskViewSection]
+}
+
 protocol  TaskViewPresenterProtocol: class {
     func viewDidLoad()
 }
