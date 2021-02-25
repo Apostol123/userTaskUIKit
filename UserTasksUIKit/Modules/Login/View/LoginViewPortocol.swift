@@ -6,8 +6,16 @@
 //  Copyright © 2021 Apostol, Alexandru. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol LoginViewProtocol: class {
-     func showAlert()
+    func showDialog(dialogTitle: String, dialogMessage: String)
+}
+
+extension LoginViewProtocol where Self: UIViewController {
+    func showDialog(dialogTitle: String, dialogMessage: String) {
+        let alert = UIAlertController(title: dialogTitle, message: dialogMessage, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert,animated: true)
+    }
 }

@@ -9,14 +9,16 @@
 import Foundation
 
 class LoginDataManager: LoginDataManagerProtocol {
-    func getUser(callback: @escaping ([User]) -> Void) {
-         URLSession.shared.get(UserEndPoint.userList, type: [User].self) { (result) in
-                   switch result {
-                   case .success(let users):
-                       callback(users!)
-                   case .failure(let error):
-                       print(error)
-                   }
-               }
+    func getUser(callback: @escaping (Result<[User], ApiError>) -> Void) {
+        URLSession.shared.get(UserEndPoint.userList, type: [User].self) { (result) in
+            switch result {
+            case .success(let users):
+                if let users = users {
+                    callback(.success(users))
+                }
+            case .failure(let error):
+                callback(.failure(error))
+            }
+        }
     }
 }

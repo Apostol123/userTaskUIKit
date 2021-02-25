@@ -9,5 +9,5 @@
 import Foundation
 
 protocol LoginDataManagerProtocol: class {
-    func getUser (callback: @escaping([User]) -> Void)
+    func getUser (callback: @escaping(Result<[User],ApiError>) -> Void)
 }

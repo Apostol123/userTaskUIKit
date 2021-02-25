@@ -28,15 +28,19 @@ class LoginViewPresenter: LoginViewControllerPresenterProtocol {
     }
     
     func login(username: String, password: String)  {
-        print("aboutToCAll")
-        
-        dataManager.getUser(callback: { (user) in
-            if   let user = user.first(where: {$0.name == username && $0.username == password}) {
-                self.coordinatorOutPut(.task(userId: user.id))
-            } else {
-                self.view?.showAlert()
+        dataManager.getUser(callback: { (result) in
+            switch result {
+            case .success(let users):
+                if   let user = users.first(where: {$0.name == username && $0.username == password}) {
+                    self.coordinatorOutPut(.task(userId: user.id))
+                } else {
+                    self.view?.showDialog(dialogTitle: "Registration Error", dialogMessage: "The username of password are wrong")
+                }
+            case .failure(_):
+                self.view?.showDialog(dialogTitle: "There was an unexpted error", dialogMessage: "Please try again later")
             }
+            
         })
-       
+        
     }
 }

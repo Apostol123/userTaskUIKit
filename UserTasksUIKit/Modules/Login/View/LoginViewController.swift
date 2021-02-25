@@ -166,9 +166,4 @@ extension UIView {
 }
 
 extension LoginViewController: LoginViewProtocol {
-    func showAlert() {
-               let alert = UIAlertController(title: "Registration Error", message: "There is a error in ur username or password", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        self.present(alert,animated: true)
-    }
 }
