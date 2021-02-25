@@ -19,7 +19,6 @@ public class AppCoordinator: Coordinator {
     
     let navigator: UINavigationController
     var currentState: AppCoordinatorState
-    var currentCoordinator: Coordinator?
     
     init(navigationController: UINavigationController) {
         self.navigator = navigationController

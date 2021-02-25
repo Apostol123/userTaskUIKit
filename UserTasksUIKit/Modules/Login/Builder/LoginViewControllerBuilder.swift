@@ -9,6 +9,7 @@
 import UIKit
 
 class LoginViewBuilder: Builder {
+    
     var coordinatorOutput: (LoginViewOutput) -> Void
     init( coordinatorOtput:@escaping(LoginViewOutput)-> Void) {
         self.coordinatorOutput  = coordinatorOtput

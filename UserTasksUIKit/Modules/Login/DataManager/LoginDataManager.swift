@@ -19,8 +19,4 @@ class LoginDataManager: LoginDataManagerProtocol {
                    }
                }
     }
-    
-    deinit {
-        print("About To be deinited")
-    }
 }
